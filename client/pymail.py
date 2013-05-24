@@ -102,3 +102,6 @@ if __name__ == '__main__':
     except AttributeError:
         print "You must login first! Type login, or type register to make an account."
         PyMail().cmdloop()
+    except IndexError:
+        print "Syntax Error: Type help <cmd> to learn how the command works."
+        PyMail().cmdloop()
