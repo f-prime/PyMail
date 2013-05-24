@@ -31,7 +31,7 @@ class PyMail:
             threading.Thread(target=self.handle, args=(obj,)).start()
 
     def handle(self, obj):
-        data = obj.recv(1024)
+        data = obj.recv(102400)
         print data
         if data:
             data = json.loads(data)
