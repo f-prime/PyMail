@@ -24,7 +24,7 @@ class PyMail(cmd.Cmd):
         ID: {1}
         From: {0}
 
-        {2}
+{2}
 
         """.format(data['from'], id, data['message'])
     def do_check(self, line):
